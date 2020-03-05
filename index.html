@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='css/main.css'>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h1 style="text-align: center;">Convertidor de divisas</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label>Ingresar divisa:</label>
+                <select class="btn-secondary rounded" id="seleccionar-divisa">
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label>Ingresar Fecha:</label>
+                <input type="text" id="fecha" placeholder="AAAA-MM-DD">
+                <small>(a partir de 1999)</small>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-secondary" id="ingresar">ingresar</button>
+    
+            </div>
+        </div>
+        <h3></h3>
+        <div id="datos-api" style="text-align: left;"></div>
+    </div>
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="src/main.js"></script>
+</body>
+
+</html>
