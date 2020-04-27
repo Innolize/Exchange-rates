@@ -6,12 +6,13 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' href='css/main.css'>
+    <link rel='stylesheet' href='./css/main.css'>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 
 <body>
     <h1 style="text-align: center;">Convertidor de divisas</h1>
+
     <div class="container">
         <div class="row">
             <div class="col">
@@ -30,13 +31,20 @@
         <div class="row">
             <div class="col">
                 <button type="button" class="btn btn-secondary" id="ingresar">ingresar</button>
-    
+
             </div>
         </div>
         <h3></h3>
-        <div id="datos-api" style="text-align: left;"></div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Divisa</th>
+                    <th scope="col">Valor</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpo-tabla">
+            </tbody>
     </div>
-
 
 
 
@@ -47,7 +55,7 @@
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="src/main.js"></script>
+    <script type="module" src="src/index.js"></script>
 </body>
 
 </html>
