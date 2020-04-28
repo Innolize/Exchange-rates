@@ -1,12 +1,12 @@
 export function mostrarCambioActual(respuestaAPI) {
-    $("h3").text(
+    $("#cambio-del-dia").text(
         `Cambio del dia ${respuestaAPI.date} en base ${respuestaAPI.base}`
     );
 }
 export function crearTabla(respuestaAPI) {
     $("#cuerpo-tabla").html("");
     Object.keys(respuestaAPI.rates).forEach(moneda => {
-        $("#cuerpo-tabla").append($(`<tr><td>${moneda}</td><td> ${respuestaAPI.rates[moneda]}</td></tr>)`));
+        $("#cuerpo-tabla").append($(`<tr><td class="divisa">${moneda}</td><td class="valorDivisa">${respuestaAPI.rates[moneda]}</td></tr>)`));
     })
 }
 
